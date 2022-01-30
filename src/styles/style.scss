@@ -38,6 +38,10 @@
   transition: all 1.5s ease;
   z-index: 500;
 }
+.logo.secondary {
+  top: 20px;
+  left: 20px;
+}
 
 // 1.2 Navigation button
 .menu-trigger {
@@ -53,6 +57,10 @@
   -o-transition: all 1.5s ease;
   transition: all 1.5s ease;
   z-index: 1005;
+}
+.menu-trigger.secondary {
+  top: 20px;
+  right: 12px;
 }
 .menu-toggle {
   -webkit-appearance: none;
@@ -337,10 +345,8 @@
 // 2.2.1 Wave
 .border-wave {
   position: fixed;
-  width: 100%;
-  height: 100%;
   overflow: hidden;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   -webkit-transition: all 1.5s ease;
   -moz-transition: all 1.5s ease;
@@ -358,6 +364,46 @@
   -ms-transform: translateY(300px);
   -o-transform: translateY(300px);
   transform: translateY(300px);
+}
+.wave-paths {
+  use {
+    animation: move-waves 10s ease-in-out infinite;
+    // fill: url(#wave-gradient);
+  }
+  use:nth-child(odd) {
+    animation-direction: reverse;
+    animation-duration: 13s;
+  }
+  use:nth-child(1) {
+    animation-delay: -2s;
+    opacity: .9;
+  }
+  use:nth-child(2) {
+    animation-delay: -3s;
+    opacity: .85;
+  }
+  use:nth-child(3) {
+    animation-delay: -4s;
+    opacity: .8;
+  }
+  use:nth-child(4) {
+    animation-delay: -5s;
+  }
+  use:nth-child(5) {
+    animation-delay: -6s;
+  }
+}
+
+@keyframes move-waves {
+  0% {
+    transform: translate3d(-30px, 0, 0);
+  }
+  50% {
+    transform: translate3d(30px, 0, 0);
+  }
+  100% {
+    transform: translate3d(-30px, 0, 0);
+  }
 }
 
 // 2.3 Scroll to top
@@ -380,7 +426,9 @@
 
 }
 @media (min-width: 1200px) { /*XL*/
-
+  .border-wave {
+    bottom: -100px;
+  }
 }
 @media (min-width: 1400px) { /*XXL*/
 
