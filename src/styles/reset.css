@@ -43,6 +43,9 @@ html, body {
   height: 100%;
 }
 
+p, h1, h2 {
+  cursor: default;
+}
 
 :focus {
   outline: 0;

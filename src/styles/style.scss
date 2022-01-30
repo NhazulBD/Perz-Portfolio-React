@@ -23,6 +23,24 @@
 */
 
 /******************************0.- Set******************************/
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  color: #fff;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+}
 ::-moz-selection { 
   background: rgba(0,0,0,1); 
   color: #fff; 
@@ -58,11 +76,11 @@
 // 1.2 Navigation button
 .menu-trigger {
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   width: 63px;
   height: 50px;
-  top: 40px;
-  right: 12px;
+  top: 28px;
+  right: 2px;
   -webkit-transition: all 1.5s ease;
   -moz-transition: all 1.5s ease;
   -ms-transition: all 1.5s ease;
@@ -453,6 +471,13 @@
   .center-block {
     display: table-cell;
     vertical-align: middle;
+    .lower-content {
+      p {
+        padding: 10px;
+        color: #fff;
+        text-align: left;
+      }
+    }
     .upper-content,
     .lower-content {
       margin: 0 auto;
@@ -463,13 +488,59 @@
         margin: 0 auto;
         z-index: 10;
         display: block;
+        padding: 135px 45px;
+        .row {
+          .col {
+            h2.section-subheading{
+              font-family: 'Oswald', sans-serif;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 400;
+              text-transform: uppercase;
+              margin: 0;
+              text-align: left;
+              letter-spacing: 0.05em;
+              color: #fff;
+              span {
+                position: relative;
+                display: inline-block;
+                padding-right: 45px;
+                line-height: 1;
+              }
+              span::before {
+                content: "";
+                position: absolute;
+                display: block;
+                top: 50%;
+                right: 0;
+                width: 30px;
+                height: 0;
+                border-top: 2px solid #fff;
+              }
+            }
+            h2.section-heading {
+              position: relative;
+              font-family: 'Oswald', sans-serif;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 85px;
+              text-align: left;
+              text-transform: uppercase;
+              letter-spacing: -0.04em;
+              color: #fff;
+              margin: 0;
+              width: 100%;
+              line-height: 100%;
+              z-index: 1;
+            }
+          }
+        }
       }
     }
   }
 }
 p {
   .link-underline {
-    cursor: pointer;
     color: #fff;
     text-decoration: underline!important;
     outline: none;
@@ -631,9 +702,8 @@ p {
     position: fixed;
     background-image: url(../assets/img/logos/logo-dark.png);
   }
-  .menu-trigger.secondary {
-    top: 20px;
-    right: 12px;
+  .menu-trigger {
+    position: fixed;
   }
   .lines-button {
     .lines {
@@ -658,6 +728,14 @@ p {
   }
 }
 @media (min-width: 992px) { /*LG*/
+  .menu-trigger {
+    top: 40px;
+    right: 12px;
+  }
+  .menu-trigger.secondary {
+    top: 20px;
+    right: 12px;
+  }
   .border-top {
     height: 110px;
   }
@@ -677,4 +755,9 @@ p {
   }
 }
 @media (min-width: 1400px) { /*XXL*/
+  .center-container .center-block .lower-content .contents .row .col {
+    h2.section-heading {
+      font-size: 75px;
+    }
+  }
 }

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import './home.scss';
 
 export default function Home(state) {
-
   return (
     <>
       <section className={state.state === 0 ? "section home show":"section home hide"}>
