@@ -169,7 +169,7 @@ body {
   line-height: 1;
   right: -200%;
   top: 0;
-  width: 390px;
+  width: 230px;
   height: 100%;
   margin: auto;
   -webkit-transition: all .6s ease-in-out;
@@ -195,17 +195,17 @@ body {
       height: 100%;
       vertical-align: middle;
       ul {
-        width: 390px;
+        width: 230px;
         list-style: none outside none;
         margin: 0 auto;
-        padding-left: 121px;
+        padding-left: 47px;
         li {
           color: #fff;
-          padding: 0 0 2px 0;
+          padding: 0 0 3px 0;
           cursor: pointer;
         }
         li.nav-item {
-          font-size: 1.88rem;
+          font-size: 1.3rem;
           transition: all .4s;
           p {
             cursor: pointer;
@@ -263,7 +263,7 @@ body {
         }
         li.credits {
           padding-top: 5px;
-          font-size: .7rem;
+          font-size: .6rem;
         }
       }
     }
@@ -672,6 +672,22 @@ p {
     
 }
 @media (min-width: 576px) { /*SM*/
+  .logo {
+    position: fixed;
+    background-image: url(../assets/img/logos/logo-dark.png);
+  }
+  .menu-trigger {
+    position: fixed;
+  }
+  .lines-button {
+    .lines {
+      background: #000;
+    }
+    .lines::before,
+    .lines::after {
+      background: #000;
+    }
+  }
   .border-top {
     height: 90px;
   }
@@ -715,20 +731,11 @@ p {
   }
 }
 @media (min-width: 768px) { /*MD*/
-  .logo {
-    position: fixed;
-    background-image: url(../assets/img/logos/logo-dark.png);
-  }
-  .menu-trigger {
-    position: fixed;
-  }
-  .lines-button {
-    .lines {
-      background: #000;
-    }
-    .lines::before,
-    .lines::after {
-      background: #000;
+  .navbar-wrapper {
+    width: 300px;
+    .navbar-content .navbar-nav ul {
+      width: 300px;
+      padding-left: 81px;
     }
   }
   .border-top {
@@ -765,6 +772,22 @@ p {
   .menu-trigger.secondary {
     top: 20px;
     right: 12px;
+  }
+  .navbar-wrapper {
+    width: 390px;
+    .navbar-content .navbar-nav ul {
+      width: 390px;
+      padding-left: 121px;
+      li {
+        padding: 0 0 2px 0;
+      }
+      li.nav-item {
+        font-size: 1.88rem;
+      }
+      li.credits {
+        font-size: .7rem;
+      }
+    }
   }
   .border-top {
     height: 110px;
