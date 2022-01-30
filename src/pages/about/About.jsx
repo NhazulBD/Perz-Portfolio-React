@@ -17,8 +17,17 @@ export default function About(state) {
         </div>
         <div className="divider-ot"></div>
         <div className="row mb-5">
-          
+          <div className="col-12 about-block">
+            <h4 className="heading">Años en el negocio</h4>
+            <div className="fade-text">5</div>
+            <p>
+              Desde que empecé mi carrera como diseñador independiente hace casi 5 años, he hecho trabajos para agencias, he consultado a empresas de nueva creación y he colaborado con personas de talento para crear productos digitales tanto para empresas como para consumidores. Estoy tranquilamente confiado, naturalmente soy curioso, y trabajo perpetuamente en mejorar mis habilidades. <span className="link-underline">"Un problema de diseño a la vez"</span>.
+            </p>
+          </div>
         </div>
+        <h2 className="section-subheading mb-3">
+          <span>Características al azar</span>
+        </h2>
       </SectionTitleLayout>
     </section>
   );

@@ -453,6 +453,9 @@ body {
   opacity: 0;
   z-index: 1;
   transition: opacity linear .5s;
+  .center-container {
+    display: none;
+  }
 }
 .section.show {
   opacity: 1;
@@ -488,52 +491,6 @@ body {
         z-index: 10;
         display: block;
         padding: 135px 30px;
-        .row {
-          .col {
-            h2.section-subheading{
-              font-family: 'Oswald', sans-serif;
-              font-size: 15px;
-              font-style: normal;
-              font-weight: 400;
-              text-transform: uppercase;
-              margin: 0;
-              text-align: left;
-              letter-spacing: 0.05em;
-              color: #fff;
-              span {
-                position: relative;
-                display: inline-block;
-                padding-right: 45px;
-                line-height: 1;
-              }
-              span::before {
-                content: "";
-                position: absolute;
-                display: block;
-                top: 50%;
-                right: 0;
-                width: 30px;
-                height: 0;
-                border-top: 2px solid #fff;
-              }
-            }
-            h2.section-heading {
-              position: relative;
-              font-family: 'Oswald', sans-serif;
-              font-style: normal;
-              font-weight: 700;
-              font-size: 55px;
-              text-align: left;
-              text-transform: uppercase;
-              letter-spacing: -0.04em;
-              color: #fff;
-              margin: 0;
-              width: 100%;
-              line-height: 100%;
-              z-index: 1;
-            }
-          }
-        }
         .divider-ot {
           position: relative;
           width: auto;
@@ -545,16 +502,47 @@ body {
     }
   }
 }
-.fade-text {
-  position: absolute;
-  top: 0;
+h2.section-subheading{
   font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: left;
+  letter-spacing: 0.05em;
+  color: #fff;
+  span {
+    position: relative;
+    display: inline-block;
+    padding-right: 45px;
+    line-height: 1;
+  }
+  span::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 0;
+    width: 30px;
+    height: 0;
+    border-top: 2px solid #fff;
+  }
+}
+h2.section-heading {
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
   font-weight: 700;
+  font-size: 55px;
+  text-align: left;
   text-transform: uppercase;
   letter-spacing: -0.04em;
-  color: rgba(11, 164, 231, .45);
-  z-index: -1;
-  line-height: 1;
+  color: #fff;
+  margin: 0;
+  width: 100%;
+  line-height: 100%;
+  z-index: 1;
 }
 p {
   .link-underline {
@@ -603,6 +591,26 @@ p {
     -o-transform: scale(1, 1);
     transform: scale(1, 1);
   }
+}
+.heading {
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+.fade-text {
+  position: absolute;
+  top: 0;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  color: rgba(11, 164, 231, .45);
+  z-index: -1;
+  line-height: 1;
 }
 
 // 2.3 Scroll to top
@@ -752,13 +760,9 @@ p {
   }
   .center-container .center-block .lower-content .contents {
     padding: 135px 90px;
-    .row {
-      .col {
-        h2.section-heading {
-          font-size: 65px;
-        }
-      }
-    }
+  }
+  h2.section-heading {
+    font-size: 65px;
   }
 }
 @media (min-width: 992px) { /*LG*/
@@ -807,24 +811,18 @@ p {
       .divider-ot{
         height: 100px;
       }
-      .row {
-        .col {
-          h2.section-heading {
-            font-size: 75px;
-          }
-        }
-      }
     }
+  }
+  h2.section-heading {
+    font-size: 75px;
   }
 }
 @media (min-width: 1200px) { /*XL*/
   .border-wave-wrapper .border-wave {
     bottom: -100px;
   }
-  .center-container .center-block .lower-content .contents .row .col {
-    h2.section-heading {
-      font-size: 85px;
-    }
+  h2.section-heading {
+    font-size: 85px;
   }
 }
 @media (min-width: 1400px) { /*XXL*/

@@ -17,10 +17,17 @@
   .center-container {
     .center-block {
       .lower-content{
-        .sections {
+        .contents {
           .row {
             .about-block {
               margin-top: -15px;
+              .heading {
+                padding: 22px 0 0 19px;
+                font-size: 12px;
+              }
+              .fade-text {
+                font-size: 110px;
+              }
             }
           }
         }
@@ -48,8 +55,14 @@
     p {
       padding: 22px 0 0 100px;
     }
-    .sections .row .about-block {
+    .contents .row .about-block {
       margin-top: -23px;
+      .heading {
+        padding: 28px 0 0 19px;
+      }
+      .fade-text {
+        font-size: 140px;
+      }
     }
   }
 }
