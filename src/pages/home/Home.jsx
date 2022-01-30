@@ -10,11 +10,22 @@ export default function Home() {
 
   return (
     <>
+      {/* borders */}
+      <div className="the-borders border-top"></div>
+      <div className="the-borders border-right"></div>
+      <div className="the-borders border-bottom"></div>
+      <div className="the-borders border-left"></div>
+      {/* waves */}
+      <canvas class="border-wave" id="wave"></canvas>
+      {/* logo */}
+      <div className="logo"></div>
+      {/* button menu */}
       <div className="menu-trigger" onClick={()=>{if(menuT){setMenuT(false);}else{setMenuT(true);}}}>
         <button className={menuT ? "lines-button menu-toggle":"lines-button menu-toggle open"}>
           <span className="lines"></span>
         </button>
       </div>
+      {/* navbar menu */}
       <div className={menuT ? "navbar-wrapper open":"navbar-wrapper"}>
         <div className="navbar-content">
           <nav className="navbar-nav">
@@ -54,6 +65,7 @@ export default function Home() {
           </nav>
         </div>
       </div>
+      {/* background */}
       <div className={ zoomIn ? "bg-img zoom-in" : "bg-img" } style={{backgroundImage: `url(${background})`}}></div>
     </>
   );

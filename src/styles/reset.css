@@ -1,3 +1,17 @@
+/*
+  [CSS Index - reset]
+  
+  ---
+  
+  Template Pedro Ramos || Portfolio
+  Author:  Pedro Ramos
+*/
+
+/*
+  1. Reset
+*/
+
+/******************************1.- Reset******************************/
 *, ::after, ::before {
   box-sizing: border-box;
 }
