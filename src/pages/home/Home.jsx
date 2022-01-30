@@ -4,7 +4,7 @@ export default function Home(state) {
 
   return (
     <>
-      <section className={state.state === 0 ? "d-block":"d-none"}>
+      <section className={state.state === 0 ? "section home show":"section home hide"}>
         
       </section>
     </>

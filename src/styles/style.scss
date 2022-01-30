@@ -410,6 +410,22 @@
     transform: scale(1.4);
   }
 }
+.section {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.section.hide {
+  transition: opacity linear 2s;
+}
+.section.show {
+  transition: opacity linear 3s;
+}
+.section.home{
+  background: none;
+  z-index: 10;
+  text-align: center;
+}
 
 // 2.3 Scroll to top
 .scroll-to-top {

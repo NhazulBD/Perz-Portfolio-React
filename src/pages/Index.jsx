@@ -4,6 +4,9 @@ import background from '../assets/img/background.png';
 import Borders from "../components/borders/Borders";
 import ScrollToTop from "../components/scrolltotop/ScrollToTop";
 import Home from "./home/Home";
+import About from "./about/About";
+import Skills from './skills/Skills';
+import Works from './works/Works';
 
 export default function Index() {
 
@@ -85,6 +88,12 @@ export default function Index() {
         <div className={ zoomIn ? "bg-img zoom-in" : "bg-img" } style={{backgroundImage: `url(${background})`}}></div>
         {/* home */}
         <Home state={activeItem}/>
+        {/* about */}
+        <About state={activeItem}/>
+        {/* skills */}
+        <Skills state={activeItem}/>
+        {/* works */}
+        <Works state={activeItem}/>
         {/* scroll-to-top */}
         <ScrollToTop />
       </div>
