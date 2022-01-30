@@ -6,7 +6,7 @@ export default function Home() {
 
   const [zoomIn, setZoomIt] = useState(false);
   const [menuT, setMenuT] = useState(false);
-  const [activeItem, setActiveItem] = useState(0)
+  const [activeItem, setActiveItem] = useState(0);
 
   return (
     <>
