@@ -15,6 +15,10 @@ export default function About(state) {
             </p>
           </div>
         </div>
+        <div className="divider-ot"></div>
+        <div className="row mb-5">
+          
+        </div>
       </SectionTitleLayout>
     </section>
   );

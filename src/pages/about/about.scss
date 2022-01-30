@@ -17,11 +17,45 @@
   .center-container {
     .center-block {
       .lower-content{
+        .sections {
+          .row {
+            .about-block {
+              margin-top: -15px;
+            }
+          }
+        }
         p {
           text-align: left;
-          padding: 22px 0 0 100px;
+          padding: 22px 0 0 76px;
         }
       }
     }
   } 
+}
+
+/******************************2.- Responsive******************************/
+@media (min-width: 0px) { /*XS*/
+    
+}
+@media (min-width: 576px) { /*SM*/
+
+}
+@media (min-width: 768px) { /*MD*/
+ 
+}
+@media (min-width: 992px) { /*LG*/
+  .about .center-container .center-block .lower-content {
+    p {
+      padding: 22px 0 0 100px;
+    }
+    .sections .row .about-block {
+      margin-top: -23px;
+    }
+  }
+}
+@media (min-width: 1200px) { /*XL*/
+
+}
+@media (min-width: 1400px) { /*XXL*/
+
 }

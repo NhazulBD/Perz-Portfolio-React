@@ -57,7 +57,7 @@ body {
   width: 59px;
   height: 59px;
   top: 20px;
-  left: 40px;
+  left: 30px;
   background-image: url(../assets/img/logos/logo-light.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -487,7 +487,7 @@ body {
         margin: 0 auto;
         z-index: 10;
         display: block;
-        padding: 135px 45px;
+        padding: 135px 30px;
         .row {
           .col {
             h2.section-subheading{
@@ -522,7 +522,7 @@ body {
               font-family: 'Oswald', sans-serif;
               font-style: normal;
               font-weight: 700;
-              font-size: 85px;
+              font-size: 55px;
               text-align: left;
               text-transform: uppercase;
               letter-spacing: -0.04em;
@@ -534,9 +534,27 @@ body {
             }
           }
         }
+        .divider-ot {
+          position: relative;
+          width: auto;
+          height: 80px;
+          margin: 0 auto;
+          background: none;
+        }
       }
     }
   }
+}
+.fade-text {
+  position: absolute;
+  top: 0;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  color: rgba(11, 164, 231, .45);
+  z-index: -1;
+  line-height: 1;
 }
 p {
   .link-underline {
@@ -725,8 +743,21 @@ p {
   .border-left {
     width: 110px;
   }
+  .center-container .center-block .lower-content .contents {
+    padding: 135px 90px;
+    .row {
+      .col {
+        h2.section-heading {
+          font-size: 65px;
+        }
+      }
+    }
+  }
 }
 @media (min-width: 992px) { /*LG*/
+  .logo {
+    left: 40px;
+  }
   .menu-trigger {
     top: 40px;
     right: 12px;
@@ -747,16 +778,31 @@ p {
   .border-left {
     width: 110px;
   }
+  .center-container .center-block .lower-content {
+    .contents {
+      padding: 135px 45px;
+      .divider-ot{
+        height: 100px;
+      }
+      .row {
+        .col {
+          h2.section-heading {
+            font-size: 75px;
+          }
+        }
+      }
+    }
+  }
 }
 @media (min-width: 1200px) { /*XL*/
   .border-wave-wrapper .border-wave {
     bottom: -100px;
   }
-}
-@media (min-width: 1400px) { /*XXL*/
   .center-container .center-block .lower-content .contents .row .col {
     h2.section-heading {
-      font-size: 75px;
+      font-size: 85px;
     }
   }
+}
+@media (min-width: 1400px) { /*XXL*/
 }
