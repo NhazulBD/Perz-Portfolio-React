@@ -452,13 +452,12 @@ body {
 .section.hide {
   opacity: 0;
   z-index: 1;
-  transition: opacity linear 2s;
-  // display: none;
+  transition: opacity linear .5s;
 }
 .section.show {
   opacity: 1;
   z-index: 2;
-  transition: opacity linear 3s;
+  transition: opacity linear 1.5s;
 }
 .center-container {
   position: absolute;
