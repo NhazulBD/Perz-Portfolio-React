@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
-import background from '../assets/img/background.png';
 import Borders from "../components/borders/Borders";
+import Logo from '../components/logo/Logo';
+import background from '../assets/img/background.png';
 import ScrollToTop from "../components/scrolltotop/ScrollToTop";
 import Home from "./home/Home";
 import About from "./about/About";
@@ -24,17 +25,17 @@ export default function Index() {
 
   return (
     <>
-      {/* borders */}
+      {/* Borders */}
       <Borders state={secondary}/>
-      {/* logo */}
-      <div className={secondary ? "logo secondary":"logo"}></div>
-      {/* button menu */}
+      {/* Logo */}
+      <Logo state={secondary} />
+      {/* Button menu */}
       <div className={secondary ? "menu-trigger secondary":"menu-trigger"} onClick={()=>{if(menuT){setMenuT(false);}else{setMenuT(true);}}}>
         <button className={menuT ? "lines-button menu-toggle":"lines-button menu-toggle open"}>
           <span className="lines"></span>
         </button>
       </div>
-      {/* navbar menu */}
+      {/* Navbar menu */}
       <div className={menuT ? "navbar-wrapper open":"navbar-wrapper"}>
         <div className="navbar-content">
           <nav className="navbar-nav">
@@ -82,19 +83,19 @@ export default function Index() {
           </nav>
         </div>
       </div>
-      {/* content */}
+      {/* Content */}
       <div className="content">
-        {/* background */}
+        {/* Background */}
         <div className={ zoomIn ? "bg-img zoom-in" : "bg-img" } style={{backgroundImage: `url(${background})`}}></div>
-        {/* home */}
+        {/* Home */}
         <Home state={activeItem}/>
-        {/* about */}
+        {/* About */}
         <About state={activeItem}/>
-        {/* skills */}
+        {/* Skills */}
         <Skills state={activeItem}/>
-        {/* works */}
+        {/* Works */}
         <Works state={activeItem}/>
-        {/* scroll-to-top */}
+        {/* Scroll-to-top */}
         <ScrollToTop />
       </div>
     </>
