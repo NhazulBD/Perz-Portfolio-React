@@ -37,6 +37,15 @@
         }
       }
     }
+  }
+  .fact {
+    .fade-text {
+      font-size: 80px;
+    }
+    .heading {
+      padding: 22px 0 0 19px;
+      font-size: 12px;
+    }
   } 
 }
 
@@ -64,6 +73,11 @@
         font-size: 140px;
       }
     }
+    .fact {
+      .heading {
+        padding: 28px 0 0 19px;
+      }
+    } 
   }
 }
 @media (min-width: 1200px) { /*XL*/

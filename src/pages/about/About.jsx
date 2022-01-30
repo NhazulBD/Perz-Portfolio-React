@@ -2,6 +2,16 @@ import React, { useState } from "react";
 import './about.scss';
 import SectionTitleLayout from "../../layouts/sectiontitlelayout/SectionTitleLayout";
 import TitlesH2 from "../../components/titles/Titles";
+import Fact from "../../components/fact/Fact";
+
+const facts = [
+  {icon:"fa fa-gamepad",title:"Jugar video-juegos"},
+  {icon:"fas fa-swimmer", title:"Me gusta nadar"},
+  {icon:"mdi mdi-tea", title:"Adoro beber té"},
+  {icon:"fas fa-hamburger", title:"Hamburbur!"},
+  {icon:"mdi mdi-zodiac-sagittarius", title:"Soy Sagitario"},
+  {icon:"fas fa-hat-wizard", title:"Me encanta la fantasía"},
+];
 
 export default function About(state) {
   return (
@@ -28,6 +38,13 @@ export default function About(state) {
         <h2 className="section-subheading mb-3">
           <span>Características al azar</span>
         </h2>
+        <div className="row">
+          {facts ? facts.map((fact, i) => {
+            return (
+              <Fact key={i} icon={fact.icon} title={fact.title}/>
+            )
+          }) : ""}
+        </div>
       </SectionTitleLayout>
     </section>
   );

@@ -30,7 +30,7 @@ export default function Index() {
       {/* Logo */}
       <Logo state={secondary} />
       {/* Button menu */}
-      <div className={secondary ? "menu-trigger secondary":"menu-trigger"} onClick={()=>{if(menuT){setMenuT(false);}else{setMenuT(true);}}}>
+      <div className={secondary ? "menu-trigger secondary":"menu-trigger"} onClick={()=>{if(menuT){setMenuT(false);}else{setMenuT(true);}scrollToTop();}}>
         <button className={menuT ? "lines-button menu-toggle":"lines-button menu-toggle open"}>
           <span className="lines"></span>
         </button>
@@ -46,7 +46,6 @@ export default function Index() {
                   setZoomIt(false);
                   setSecondary(false);
                   setActiveItem(0);
-                  scrollToTop();
                   }}><span className="cross-out">Inicio</span></p>
               </li>
               <li className={activeItem === 1 ? "nav-item active":"nav-item"}>
@@ -55,7 +54,6 @@ export default function Index() {
                   setZoomIt(true);
                   setSecondary(true);
                   setActiveItem(1);
-                  scrollToTop();
                 }}><span className="cross-out">Acerca de mí</span></p>
               </li>
               <li className={activeItem === 2 ? "nav-item active":"nav-item"}>
@@ -64,7 +62,6 @@ export default function Index() {
                   setZoomIt(true);
                   setSecondary(true);
                   setActiveItem(2);
-                  scrollToTop();
                 }}><span className="cross-out">Habilidades</span></p>
               </li>
               <li className={activeItem === 3 ? "nav-item active":"nav-item"}>
@@ -73,7 +70,6 @@ export default function Index() {
                   setZoomIt(true);
                   setSecondary(true);
                   setActiveItem(3);
-                  scrollToTop();
                 }}><span className="cross-out">Trabajos</span></p>
               </li>
               <li className="credits">
