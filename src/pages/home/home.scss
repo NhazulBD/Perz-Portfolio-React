@@ -11,3 +11,12 @@
   1. Content
   2. Responsive
 */
+
+.home .center-container {
+  background: rgba(0, 0, 0, .6);
+  .center-block {
+    .contents {
+      padding: 0;
+    }
+  }
+}

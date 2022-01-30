@@ -1,0 +1,52 @@
+/*
+  [CSS Index - boots]
+  
+  ---
+  
+  Template Pedro Ramos || Portfolio
+  Author:  Pedro Ramos
+*/
+
+/*
+  1. Content
+  2. Responsive
+*/
+
+/******************************1.- Content******************************/
+.container {
+  width: 100%;
+  padding-right: .75rem;
+  padding-left: .75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/******************************2.- Responsive******************************/
+@media (min-width: 0px) { /*XS*/
+    
+}
+@media (min-width: 576px) { /*SM*/
+  .container{
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) { /*MD*/
+  .container{
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) { /*LG*/
+  .container{
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) { /*XL*/
+  .container{
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) { /*XXL*/
+  .container{
+    max-width: 1320px;
+  }
+}

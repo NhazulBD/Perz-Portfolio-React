@@ -411,22 +411,46 @@
   }
 }
 .section {
+  display: block;
   min-height: 100%;
   margin: 0;
   padding: 0;
 }
 .section.hide {
+  opacity: 0;
+  z-index: 1;
   transition: opacity linear 2s;
+  // display: none;
 }
 .section.show {
+  opacity: 1;
+  z-index: 2;
   transition: opacity linear 3s;
 }
-.section.home{
-  background: none;
-  z-index: 10;
-  text-align: center;
+.center-container {
+  position: absolute;
+  display: table;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, .84);
+  .center-block {
+    display: table-cell;
+    vertical-align: middle;
+    .upper-content {
+      margin: 0 auto;
+      padding: 0;
+      .contents {
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        z-index: 10;
+        display: block;
+      }
+    }
+  }
 }
-
 // 2.3 Scroll to top
 .scroll-to-top {
   color: #fff;
@@ -494,7 +518,7 @@
     
 }
 @media (min-width: 576px) { /*SM*/
-    
+
 }
 @media (min-width: 768px) { /*MD*/
   .logo {
