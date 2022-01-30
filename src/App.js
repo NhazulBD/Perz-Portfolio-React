@@ -2,12 +2,12 @@ import React, { Suspense } from "react";
 
 // import Layout from "./layouts/Layout";
 import Preloader from "./components/preloader/Preloader";
-import Home from "./pages/home/Home";
+import Index from "./pages/Index";
 
 function App() {
   return (
     <Suspense fallback={<Preloader />}>
-      <Home />
+      <Index />
     </Suspense>
   );
 }
