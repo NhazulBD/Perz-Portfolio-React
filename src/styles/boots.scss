@@ -20,6 +20,14 @@
   margin-right: auto;
   margin-left: auto;
 }
+.row {
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
 
 /******************************2.- Responsive******************************/
 @media (min-width: 0px) { /*XS*/

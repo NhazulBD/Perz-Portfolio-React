@@ -10,7 +10,14 @@ export default function Home(state) {
           <div className="center-block">
             <div className="upper-content">
               <div className="container contents">
-
+                <div className="row introduction">
+                  <h2 className="home-page-title">
+                    Diseñador, Desarrollador Front-end
+                  </h2>
+                  <h1 className="home-page-title">
+                    Pedro Ramos
+                  </h1>
+                </div>
               </div>
             </div>
           </div>

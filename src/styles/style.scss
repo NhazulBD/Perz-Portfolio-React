@@ -8,6 +8,7 @@
 */
 
 /*
+  0. Set
   1. Navigation
     1.1 Navigation logo
     1.2 Navigation button
@@ -20,6 +21,16 @@
     2.3 Scroll to top
   3. Responsive
 */
+
+/******************************0.- Set******************************/
+::-moz-selection { 
+  background: rgba(0,0,0,1); 
+  color: #fff; 
+}
+::selection { 
+  background: rgba(0,0,0,1); 
+  color: #fff; 
+}
 
 /******************************1.- Navigation******************************/
 // 1.1 Navigation logo
@@ -336,7 +347,9 @@
 .wave-paths {
   use {
     animation: move-waves 10s ease-in-out infinite;
-    // fill: url(#wave-gradient);
+    -o-animation: move-waves 10s ease-in-out infinite;
+    -moz-animation: move-waves 10s ease-in-out infinite;
+    -webkit-animation: move-waves 10s ease-in-out infinite;
   }
   use:nth-child(odd) {
     animation-direction: reverse;
@@ -438,7 +451,8 @@
   .center-block {
     display: table-cell;
     vertical-align: middle;
-    .upper-content {
+    .upper-content,
+    .lower-content {
       margin: 0 auto;
       padding: 0;
       .contents {
