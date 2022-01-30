@@ -37,6 +37,11 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+
 :focus {
   outline: 0;
 }
