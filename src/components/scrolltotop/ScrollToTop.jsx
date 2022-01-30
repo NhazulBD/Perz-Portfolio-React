@@ -25,7 +25,7 @@ export default function ScrollToTop() {
   return (
     <div className="scroll-to-top">
         <span onClick={scrollToTop} className={isVisible ? "to-top show":"to-top"}>
-          <h3>Up</h3>
+          <span className="fa fa-arrow-up"></span>
         </span> 
     </div>
   );

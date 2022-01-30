@@ -5,6 +5,7 @@ import './styles/boots.scss';
 import './styles/style.scss';
 import './styles/margins.css';
 import './assets/fonts/fonts.css';
+import './assets/fonts/fontawesome/css/all.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
