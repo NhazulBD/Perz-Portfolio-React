@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import './about.scss';
-import SectionTitleLayout from "../../layouts/sectiontitlelayout/SectionTitleLayout";
+import SectionContentLayout from "../../layouts/sectioncontentlayout/SectionContentLayout";
 import TitlesH2 from "../../components/titles/Titles";
 import Fact from "../../components/fact/Fact";
 
@@ -16,7 +16,7 @@ const facts = [
 export default function About(state) {
   return (
     <section className={state.state === 1 ? "section about show":"section about hide"}>
-      <SectionTitleLayout>
+      <SectionContentLayout>
         <div className="row">
           <div className="col col-12">
             <TitlesH2 subtitle="¿Quién es este sujeto?" title="Hey, soy Pedro" />
@@ -43,9 +43,9 @@ export default function About(state) {
             return (
               <Fact key={i} icon={fact.icon} title={fact.title}/>
             )
-          }) : ""}
+          }):""}
         </div>
-      </SectionTitleLayout>
+      </SectionContentLayout>
     </section>
   );
 }

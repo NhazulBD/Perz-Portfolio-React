@@ -57,6 +57,11 @@
   .container{
     max-width: 540px;
   }
+  .col-sm-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 @media (min-width: 768px) { /*MD*/
   .container{
@@ -79,6 +84,11 @@
     -ms-flex: 0 0 16.666667%;
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
+  }
+  .col-lg-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
   }
 }
 @media (min-width: 1200px) { /*XL*/

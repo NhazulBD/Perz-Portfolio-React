@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-export default function SectionTitleLayout({ children }) {
+export default function SectionContentLayout({ children }) {
   return (
     <Fragment>
       <div className="center-container">
