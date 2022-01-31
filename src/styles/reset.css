@@ -95,6 +95,12 @@ input[type=search] {
   box-sizing: content-box;
 }
 
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 textarea {
   overflow: auto;
   vertical-align: top;
