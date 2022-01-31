@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './works.scss';
 import SectionContentLayout from "../../layouts/sectioncontentlayout/SectionContentLayout";
 import TitlesH2 from "../../components/titles/Titles";
+import Gallery from "../../components/gallery/Gallery";
 
 export default function Works(state) {
 
@@ -33,15 +34,15 @@ export default function Works(state) {
           </div>
         </div>
         <div className="divider-ot"></div>
-        {!toggleSection ? (
-          <>
-            Branding
-          </>
-        ):(
-          <>
-            Web
-          </>
-        )}
+        <div className="row">
+          {!toggleSection ? (
+            <Gallery />
+          ):(
+            <>
+              Web
+            </>
+          )}
+        </div>
       </SectionContentLayout>
     </section>
   );
