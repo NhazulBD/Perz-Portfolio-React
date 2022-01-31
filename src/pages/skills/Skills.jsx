@@ -52,7 +52,9 @@ export default function Skills(state) {
           {/* Language */}
           <div className="col-lg-4 col-sm-12">
             <div className="row">
-              <Skillbar heading="illustrator" fade="fas fa-flag" percent="60" wicon="true"/>
+              <Skillbar heading="Español" fade="fas fa-flag" percent="100" wicon="true"/>
+              <Skillbar heading="English" fade="fas fa-flag" percent="70" wicon="true"/>
+              <Skillbar heading="Pусский" fade="fas fa-flag" percent="50" wicon="true"/>
             </div>
           </div>
         </div>
