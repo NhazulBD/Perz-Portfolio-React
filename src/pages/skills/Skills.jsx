@@ -2,6 +2,8 @@ import React from "react";
 import './skills.scss';
 import SectionContentLayout from "../../layouts/sectioncontentlayout/SectionContentLayout";
 import TitlesH2 from "../../components/titles/Titles";
+import FadeTitle from "../../components/titles/FadeTitle";
+import Skillbar from "../../components/skillbar/Skillbar";
 
 const skillsDesc = [
   {heading:"Responsivo",text:"Mis diseños funcionarán en cualquier dispositivo, grande o pequeño."},
@@ -20,17 +22,40 @@ export default function Skills(state) {
         </div>
         <div className="divider-ot"></div>
         <div className="row">
-        {skillsDesc ? skillsDesc.map((skill, i) => {
+          {skillsDesc ? skillsDesc.map((skill, i) => {
             return (
               <div key={i} className="col-lg-4 col-sm-12 skills-block">
-                <h4 className="heading">{skill.heading}</h4>
-                <div className="fade-text">{skill.heading}</div>
+                <FadeTitle heading={skill.heading} fade={skill.heading} class="" wicon="false"/>
                 <p>{skill.text}</p>
               </div>
             )
           }):""}
         </div>
         <div className="divider-ot"></div>
+        <div className="row">
+          {/* Skills */}
+          <div className="col-lg-4 col-sm-12">
+            <div className="row">
+              <Skillbar heading="css" fade="css" percent="80" wicon="false"/>
+              <Skillbar heading="html" fade="html" percent="90" wicon="false"/>
+              <Skillbar heading="javascript" fade="javascript" percent="80" wicon="false"/>
+              <Skillbar heading="reactjs" fade="reactjs" percent="70" wicon="false"/>
+            </div>
+          </div>
+          <div className="col-lg-4 col-sm-12">
+            <div className="row">
+              <Skillbar heading="diseño ui" fade="diseño ui" percent="70" wicon="false"/>
+              <Skillbar heading="branding" fade="branding" percent="60" wicon="false"/>
+              <Skillbar heading="illustrator" fade="illustrator" percent="60" wicon="false"/>
+            </div>
+          </div>
+          {/* Language */}
+          <div className="col-lg-4 col-sm-12">
+            <div className="row">
+              <Skillbar heading="illustrator" fade="fas fa-flag" percent="60" wicon="true"/>
+            </div>
+          </div>
+        </div>
       </SectionContentLayout>
     </section>
   );

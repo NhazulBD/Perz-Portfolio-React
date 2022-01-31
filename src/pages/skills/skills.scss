@@ -1,5 +1,5 @@
 /*
-  [CSS Index - skils]
+  [CSS Index - skills]
   
   ---
   
@@ -30,6 +30,7 @@
                 font-size: 50px;
               }
             }
+            .skills-block.correction,
             .skills-block:nth-child(2),
             .skills-block:nth-child(3){
               margin-top: 32px;
@@ -54,7 +55,8 @@
 @media (min-width: 992px) { /*LG*/
   .skills .center-container .center-block .lower-content {
     .contents .row {
-      .skils-block,
+      .skills-block,
+      .skills-block.correction,
       .skills-block:nth-child(2),
       .skills-block:nth-child(3) {
         margin-top: -10px;

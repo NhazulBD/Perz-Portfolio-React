@@ -2,7 +2,7 @@ import React from "react";
 import './about.scss';
 import SectionContentLayout from "../../layouts/sectioncontentlayout/SectionContentLayout";
 import TitlesH2 from "../../components/titles/Titles";
-import Fact from "../../components/fact/Fact";
+import FadeTitle from "../../components/titles/FadeTitle";
 
 const facts = [
   {icon:"fa fa-gamepad",title:"Jugar video-juegos"},
@@ -28,8 +28,7 @@ export default function About(state) {
         <div className="divider-ot"></div>
         <div className="row mb-5">
           <div className="col-12 about-block">
-            <h4 className="heading">Años en el negocio</h4>
-            <div className="fade-text">5</div>
+            <FadeTitle heading="Años en el negocio" fade="5" wicon="false" class=""/>
             <p>
               Desde que empecé mi carrera como diseñador independiente hace casi 5 años, he hecho trabajos para agencias, he consultado a empresas de nueva creación y he colaborado con personas de talento para crear productos digitales tanto para empresas como para consumidores. Estoy tranquilamente confiado, naturalmente soy curioso, y trabajo perpetuamente en mejorar mis habilidades. <span className="link-underline">"Un problema de diseño a la vez"</span>.
             </p>
@@ -41,7 +40,9 @@ export default function About(state) {
         <div className="row">
           {facts ? facts.map((fact, i) => {
             return (
-              <Fact key={i} icon={fact.icon} title={fact.title}/>
+              <div key={i} className="col-6 col-md-4 col-lg-2 mt-1 mb-5 mb-lg-1 fact">
+                <FadeTitle heading={fact.title} fade={fact.icon} wicon="true" class="text-center text-lg-left"/>
+              </div>
             )
           }):""}
         </div>
